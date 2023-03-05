@@ -11,6 +11,4 @@ def solution(number, limit, power):
         answer.append(len(set(temp)))  # 중복되는 수를 하나의 약수로 표현
     return sum([i if i <= limit else power for i in answer])  # 조건에 맞춰 필터링 후 합산
 
-
-
 print(solution(number, limit, power))

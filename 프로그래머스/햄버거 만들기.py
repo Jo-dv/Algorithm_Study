@@ -1,6 +1,5 @@
 ingredient = [2, 1, 1, 2, 1, 2, 3, 1, 1]
 
-
 # 햄버거 만드는 순서: 1, 2, 3, 1
 def solution(ingredient):
     i, answer = 0, 0
@@ -17,6 +16,5 @@ def solution(ingredient):
         i += 1  # 탐색 인덱스를 다음으로 갱신
 
     return answer
-
 
 print(solution(ingredient))

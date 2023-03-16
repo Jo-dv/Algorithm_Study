@@ -13,7 +13,7 @@ def solution(prices):  # 내가 현재 시점에서 산 주식이 다음에 산 
 
     return answer'''
 
-def solution(prices):
+def solution(prices):  # 스택을 이용한 풀이
     stack, answer = [], [0] * len(prices)
     append, pop = stack.append, stack.pop
 

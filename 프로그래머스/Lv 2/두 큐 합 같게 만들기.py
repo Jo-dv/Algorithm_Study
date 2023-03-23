@@ -21,7 +21,9 @@ def solution(queue1, queue2):
         answer = -1
 
     return answer
+    # 2배만큼 반복하면 두 큐가 역전되는데 주의할 점은 두 큐의 합을 같게 만드는거지 길이를 같게 만드는 것이 아니다.
+    # 즉 합이 같아도 길이는 다를 수 있다. 그렇기에 단순 두 큐가 역전되었다고 해서 모든 탐색이 끝났다고 보기에는 어렵다.
 
 
-queue1, queue2 = [1, 2, 1, 2], [1, 10, 1, 2]
+queue1, queue2 = [1, 1, 1, 1, 1], [1, 1, 1, 9, 1]
 print(solution(queue1, queue2))

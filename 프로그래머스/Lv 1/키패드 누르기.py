@@ -18,10 +18,7 @@ def solution(numbers, hand):
                 r_hand = target
                 answer += 'R'
             elif l_distance == r_distance:  # 두 거리가 동일할 경우
-                if hand == 'left':  # 자신의 주 손에 따라
-                    l_hand = target
-                else:
-                    r_hand = target
+                l_hand, r_hand = (target, r_hand) if hand == 'left' else (l_hand, target)  # 자신의 주 손에 따라
                 answer += hand[0].upper()  # hand의 값은 left 또는 right이므로 첫 글자를 가져와 대문자로 변환 후 추가
             else:  # 왼쪽이 더 가깝다면
                 l_hand = target

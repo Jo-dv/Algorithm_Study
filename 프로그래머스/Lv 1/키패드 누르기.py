@@ -30,6 +30,4 @@ def solution(numbers, hand):
 targets = [7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2]
 hand = "left"
 
-#print(solution(targets, hand))
-a, b = [1, 2, 3]
-print(b)
+print(solution(targets, hand))

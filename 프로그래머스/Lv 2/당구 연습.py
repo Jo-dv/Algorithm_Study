@@ -18,5 +18,3 @@ def solution(m, n, startX, startY, balls):
 m, n, startX, startY, balls = 10, 10, 5, 9, [[5, 8]]
 
 print(solution(m, n, startX, startY, balls))
-
-![그림1](https://user-images.githubusercontent.com/63555689/229997090-f306615c-032b-40a0-9aef-d2be2ded99ef.png)

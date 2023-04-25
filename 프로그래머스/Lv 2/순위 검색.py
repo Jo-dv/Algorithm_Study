@@ -1,29 +1,30 @@
 '''
-def solution(info, query):
+def solution(info, query):  # 정확성
     answer = []
     qs = []
     count = 0
 
-    for i in query:
+    for i in query:  # 쿼리에서 불필요한 정보 제거
         i = i.replace('and', '')
         x = i.split()
         qs.append(x)
 
-    for i in qs:
-        for j in info:
-            x = j.split()
+    for i in qs:  # 쿼리를 하나씩 가져와
+        for j in info:  # 모든 정보들과 비교, 최대 100,000 * 50,000번 비교
+            x = j.split()  # 정보를 분할하여
             if (x[0] == i[0] or i[0] == '-') and (x[1] == i[1] or i[1] == '-') and (x[2] == i[2] or i[2] == '-') and \
-                    (x[3] == i[3] or i[3] == '-') and (int(x[4]) >= int(i[4]) or i[4] == '-'):
-                count += 1
-        answer.append(count)
-        count = 0
+                    (x[3] == i[3] or i[3] == '-') and (int(x[4]) >= int(i[4]) or i[4] == '-'):  # 쿼리 조건과 일치하면
+                count += 1  # 해당 쿼리에 해당하는 인원 갱신
+        answer.append(count)  # 비교가 끝나면 저장
+        count = 0  # 다음 쿼리 비교를 위해 초기화
 
     return answer
 '''
+
 from collections import defaultdict
 from itertools import combinations
 
-def bin_search(x, target):
+def bin_search(x, target):  # 정확성 및 효율성
     lower, upper = 0, len(x) - 1
 
     while lower <= upper:  # target 이상의 값이 시작되는 최소 지점을 탐색

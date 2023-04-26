@@ -39,6 +39,10 @@ def bin_search(x, target):  # 정확성 및 효율성
 def solution(info, query):
     answer = []
     data, qs = defaultdict(list), []
+    # qs를 딕셔너리가 아닌 리스트를 사용하는 이유는, 딕셔너리를 사용할 경우, 중복 키에 대해 값이 갱신돼 이전 값에 대해 누락이 발생, 값을
+    # 리스트로 하여 중복 키에 대해 처리해도 마찬가지, 키 자체는 한 번있기 때문에 한 번 호출하면 나머지 값이 있다고 해서 더 호출되지 않음
+    # 처음 리스트를 사용하여 정답을 맞췄으나, 깔끔하게 하려고 시도하려고 딛셔너리로 바꾼 후 간과했던 것임, 모든 값에 대해 처리할 경우
+    # 리스트를 사용할지 딕셔너리를 사용할지 제대로 생각할 것
 
     for i in info:
         x = i.split()  # 정보와 점수를 분리
@@ -46,7 +50,7 @@ def solution(info, query):
         for j in range(5):  # 네 가지 정보에 대해 경우의 수(=정보가 없는, 즉 - 인 상황도 고려)
             for k in combinations(info_key, j):  # 정보가 0, 정보가 1, 정보가 2, 정보가 3, 정보가 4
                 data[''.join(k)].append(info_val)  # 경우의 수를 하나의 문자열로 바꾸고 키로하여 점수를 저장
-                
+
     for i in data.values():
         i.sort()  # 탐색을 위해 정렬
 

@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bfac0db5-1cff-43ba-bdad-7411d994ca4a" name="Changes" comment="230430">
-      <change afterPath="$PROJECT_DIR$/swea/D3/3282 01 Knapsack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/백준/실버/11279 최대 힙.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/백준/실버/1927 최소 힙.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/백준/실버/2108 통계학.py" afterDir="false" />
-    </list>
+    <list default="true" id="bfac0db5-1cff-43ba-bdad-7411d994ca4a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,7 +169,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682716517175</updated>
-      <workItem from="1682716518732" duration="72812000" />
+      <workItem from="1682716518732" duration="73129000" />
     </task>
     <task id="LOCAL-00001" summary="230429">
       <created>1682770102703</created>
@@ -204,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682864953425</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="230509">
+      <created>1683634298819</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683634298819</updated>
+    </task>
+    <task id="LOCAL-00006" summary="230509">
+      <created>1683634374264</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683634374264</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +222,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="230429" />
     <MESSAGE value="230430" />
-    <option name="LAST_COMMIT_MESSAGE" value="230430" />
+    <MESSAGE value="230509" />
+    <option name="LAST_COMMIT_MESSAGE" value="230509" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfac0db5-1cff-43ba-bdad-7411d994ca4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/swea/D3/4615 재미있는 오셀로 게임.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swea/D3/3307 최장 증가 부분 수열.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swea/D3/9280 진용이네 주차타워.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,29 +51,7 @@
       <recent name="D:\Git\Algorithm_Study\swea\D3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.4615 재미있는 오셀로 게임">
-    <configuration name="2108 통계학" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm_Study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준/실버" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/실버/2108 통계학.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.9280 진용이네 주차타워">
     <configuration name="3282 01 Knapsack" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm_Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,6 +66,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/3282 01 Knapsack.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="3307 최장 증가 부분 수열" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm_Study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/swea/D3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/3307 최장 증가 부분 수열.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +140,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="9280 진용이네 주차타워" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm_Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,12 +148,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/swea/D3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/9280 진용이네 주차타워.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.9280 진용이네 주차타워" />
+        <item itemvalue="Python.3307 최장 증가 부분 수열" />
         <item itemvalue="Python.4615 재미있는 오셀로 게임" />
         <item itemvalue="Python.3282 01 Knapsack" />
         <item itemvalue="Python.5607 조합" />
-        <item itemvalue="Python.2108 통계학" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +181,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682716517175</updated>
       <workItem from="1682716518732" duration="73523000" />
-      <workItem from="1683635010107" duration="16901000" />
+      <workItem from="1683635010107" duration="26750000" />
     </task>
     <task id="LOCAL-00001" summary="230429">
       <created>1682770102703</created>
@@ -245,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683678960777</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="230510">
+      <created>1683732208006</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683732208006</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +263,8 @@
     <MESSAGE value="230429" />
     <MESSAGE value="230430" />
     <MESSAGE value="230509" />
-    <option name="LAST_COMMIT_MESSAGE" value="230509" />
+    <MESSAGE value="230510" />
+    <option name="LAST_COMMIT_MESSAGE" value="230510" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -295,6 +304,11 @@
           <line>33</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/swea/D3/3307 최장 증가 부분 수열.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -307,6 +321,7 @@
     <SUITE FILE_PATH="coverage/Algorithm_Study$1244__.coverage" NAME="1244 최대 상금 Coverage Results" MODIFIED="1682748325094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$2817___.coverage" NAME="2817 부분 수열의 합 Coverage Results" MODIFIED="1682836206913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$1860___.coverage" NAME="1860 진기의 최고급 붕어빵 Coverage Results" MODIFIED="1682864577480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
+    <SUITE FILE_PATH="coverage/Algorithm_Study$3307____.coverage" NAME="3307 최장 증가 부분 수열 Coverage Results" MODIFIED="1683766686587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$5125__.coverage" NAME="5125 햄버거 다이어트 Coverage Results" MODIFIED="1682776503841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$2814__.coverage" NAME="2814 최장 경로 Coverage Results" MODIFIED="1682847760933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$4615___.coverage" NAME="4615 재미있는 오셀로 게임 Coverage Results" MODIFIED="1683705575131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
@@ -314,6 +329,7 @@
     <SUITE FILE_PATH="coverage/Algorithm_Study$5607_.coverage" NAME="5607 조합 Coverage Results" MODIFIED="1683638156405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$1697_.coverage" NAME="1697 숨바꼭질 Coverage Results" MODIFIED="1682836203083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/백준/실버" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$5186_2.coverage" NAME="5186 이진수2 Coverage Results" MODIFIED="1682719377490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D2" />
+    <SUITE FILE_PATH="coverage/Algorithm_Study$9280__.coverage" NAME="9280 진용이네 주차타워 Coverage Results" MODIFIED="1683797265537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$11279__.coverage" NAME="11279 최대 힙 Coverage Results" MODIFIED="1682893919801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/백준/실버" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$test.coverage" NAME="test Coverage Results" MODIFIED="1682895884069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$3282_01_Knapsack.coverage" NAME="3282 01 Knapsack Coverage Results" MODIFIED="1683677746358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfac0db5-1cff-43ba-bdad-7411d994ca4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/swea/D3/13038 교환학생.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swea/D3/2930 힙.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swea/D3/7675 통역사 성경이.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swea/D3/9280 진용이네 주차타워.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swea/D3/11315 오목 판정.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swea/D3/13722 정사각형 판정.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swea/D3/15612 체스판 위의 룩 배치.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +63,29 @@
       <recent name="D:\Git\Algorithm_Study\swea\D3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.2930 힙">
+  <component name="RunManager" selected="Python.15612 체스판 위의 룩 배치">
+    <configuration name="11315 오목 판정" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm_Study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/swea/D3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/11315 오목 판정.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="13038 교환학생" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm_Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,7 +108,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="13428 숫자 조작" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="13722 정사각형 판정" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm_Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -100,7 +121,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/13428 숫자 조작.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/13722 정사각형 판정.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="15612 체스판 위의 룩 배치" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm_Study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/swea/D3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/15612 체스판 위의 룩 배치.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,57 +174,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="7675 통역사 성경이" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm_Study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/swea/D3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/7675 통역사 성경이.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="9280 진용이네 주차타워" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm_Study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/swea/D3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/9280 진용이네 주차타워.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.15612 체스판 위의 룩 배치" />
+        <item itemvalue="Python.13722 정사각형 판정" />
+        <item itemvalue="Python.11315 오목 판정" />
         <item itemvalue="Python.2930 힙" />
         <item itemvalue="Python.13038 교환학생" />
-        <item itemvalue="Python.7675 통역사 성경이" />
-        <item itemvalue="Python.9280 진용이네 주차타워" />
-        <item itemvalue="Python.13428 숫자 조작" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +194,7 @@
       <updated>1682716517175</updated>
       <workItem from="1682716518732" duration="73523000" />
       <workItem from="1683635010107" duration="26750000" />
-      <workItem from="1684037825657" duration="42353000" />
+      <workItem from="1684037825657" duration="51905000" />
     </task>
     <task id="LOCAL-00001" summary="230429">
       <created>1682770102703</created>
@@ -274,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684158798913</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="230516">
+      <created>1684242924494</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684242924494</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +292,8 @@
     <MESSAGE value="230509" />
     <MESSAGE value="230510" />
     <MESSAGE value="230515" />
-    <option name="LAST_COMMIT_MESSAGE" value="230515" />
+    <MESSAGE value="230516" />
+    <option name="LAST_COMMIT_MESSAGE" value="230516" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -382,8 +389,11 @@
     <SUITE FILE_PATH="coverage/Algorithm_Study$3307____.coverage" NAME="3307 최장 증가 부분 수열 Coverage Results" MODIFIED="1683766686587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$5125__.coverage" NAME="5125 햄버거 다이어트 Coverage Results" MODIFIED="1682776503841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$4615___.coverage" NAME="4615 재미있는 오셀로 게임 Coverage Results" MODIFIED="1683705575131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
+    <SUITE FILE_PATH="coverage/Algorithm_Study$13722__.coverage" NAME="13722 정사각형 판정 Coverage Results" MODIFIED="1684291959565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$1697_.coverage" NAME="1697 숨바꼭질 Coverage Results" MODIFIED="1682836203083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/백준/실버" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$9280__.coverage" NAME="9280 진용이네 주차타워 Coverage Results" MODIFIED="1684202497121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
+    <SUITE FILE_PATH="coverage/Algorithm_Study$15612____.coverage" NAME="15612 체스판 위의 룩 배치 Coverage Results" MODIFIED="1684308806690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$test.coverage" NAME="test Coverage Results" MODIFIED="1682895884069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Algorithm_Study$11315__.coverage" NAME="11315 오목 판정 Coverage Results" MODIFIED="1684287797266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
   </component>
 </project>

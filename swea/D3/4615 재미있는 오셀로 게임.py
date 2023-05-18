@@ -16,7 +16,7 @@ for t in range(1, int(input()) + 1):
             mx = x + i[1]
             flag = False  # 뒤집기 유효성 여부
 
-            while 0 <= my <= mx < n:  # 이동하려는 범위가 게임판을 벗어나지 않고
+            while 0 <= my < n and 0 <= mx < n:  # 이동하려는 범위가 게임판을 벗어나지 않고
                 if not grid[my][mx]:  # 이동하려는 위치에 돌이 없다면
                     break  # 오셀로는 돌을 위치시킬 때 그 사이에 반드시 돌이 존재해야 하므로, 돌을 위치한 상태에서 0이 존재해서는 안됨
                 if grid[my][mx] == stone:  # 처음에 둔 돌과 동일한 색상의 돌을 발견하면

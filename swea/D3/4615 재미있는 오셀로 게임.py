@@ -30,7 +30,8 @@ for t in range(1, int(input()) + 1):
                     grid[my][mx] = stone  # 그 사이에 있는 돌들을 뒤집음
                     my -= i[0]  # 역으로 추적
                     mx -= i[1]
-                # or을 사용하는 이유는 대각일 때만 y == x이므로, 수직 혹은 수평 이동일 땐 y 또는 x만 검사하면 되기 때문이다.
+                # and를 사용하면 둘 중 하나가 true가 되는 순간 조건 자체는 false가 됨.
+                # 대각이면 상관없지만 수직 및 수평은 상시 y == my이거나, x == mx이기 때문에 바로 false가 돼서 뒤집을 수 없음
 
     b = sum(i.count(1) for i in grid)
     w = sum(i.count(2) for i in grid)

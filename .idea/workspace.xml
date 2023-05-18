@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfac0db5-1cff-43ba-bdad-7411d994ca4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/swea/D3/1493 수의 새로운 연산.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swea/D3/9480 민정이와 광직이의 알파벳 공부.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swea/D3/4615 재미있는 오셀로 게임.py" beforeDir="false" afterPath="$PROJECT_DIR$/swea/D3/4615 재미있는 오셀로 게임.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +184,7 @@
       <updated>1682716517175</updated>
       <workItem from="1682716518732" duration="73523000" />
       <workItem from="1683635010107" duration="26750000" />
-      <workItem from="1684037825657" duration="69536000" />
+      <workItem from="1684037825657" duration="70281000" />
     </task>
     <task id="LOCAL-00001" summary="230429">
       <created>1682770102703</created>
@@ -286,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684336225655</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="230518">
+      <created>1684386263783</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684386263783</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +343,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/swea/D3/4615 재미있는 오셀로 게임.py</url>
-          <line>33</line>
+          <line>34</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

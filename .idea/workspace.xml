@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfac0db5-1cff-43ba-bdad-7411d994ca4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/swea/D3/12741 두 전구.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swea/D3/3032 홍준이의 숫자 놀이.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swea/D3/3750 Digit sum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swea/D3/4579 세상의 모든 팰린드롬 2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +61,7 @@
       <recent name="D:\Git\Algorithm_Study\swea\D3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.12741 두 전구">
+  <component name="RunManager" selected="Python.4579 세상의 모든 팰린드롬 2">
     <configuration name="12741 두 전구" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm_Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,28 +76,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/12741 두 전구.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="1493 수의 새로운 연산" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm_Study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/swea/D3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/1493 수의 새로운 연산.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,6 +128,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="4579 세상의 모든 팰린드롬 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm_Study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/swea/D3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/4579 세상의 모든 팰린드롬 2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="9480 민정이와 광직이의 알파벳 공부" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm_Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.4579 세상의 모든 팰린드롬 2" />
         <item itemvalue="Python.12741 두 전구" />
         <item itemvalue="Python.3032 홍준이의 숫자 놀이" />
         <item itemvalue="Python.3750 Digit sum" />
         <item itemvalue="Python.9480 민정이와 광직이의 알파벳 공부" />
-        <item itemvalue="Python.1493 수의 새로운 연산" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +192,7 @@
       <updated>1682716517175</updated>
       <workItem from="1682716518732" duration="73523000" />
       <workItem from="1683635010107" duration="26750000" />
-      <workItem from="1684037825657" duration="81445000" />
+      <workItem from="1684037825657" duration="86545000" />
     </task>
     <task id="LOCAL-00001" summary="230429">
       <created>1682770102703</created>
@@ -308,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684386834376</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="230518">
+      <created>1684405857072</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1684405857072</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,6 +426,7 @@
     <SUITE FILE_PATH="coverage/Algorithm_Study$13428__.coverage" NAME="13428 숫자 조작 Coverage Results" MODIFIED="1684143884844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$5201__.coverage" NAME="5201 컨테이너 운반 Coverage Results" MODIFIED="1682721858124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$1873__.coverage" NAME="1873 상호의 배틀필드 Coverage Results" MODIFIED="1682716649196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
+    <SUITE FILE_PATH="coverage/Algorithm_Study$4579____2.coverage" NAME="4579 세상의 모든 팰린드롬 2 Coverage Results" MODIFIED="1684421892092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$9480____.coverage" NAME="9480 민정이와 광직이의 알파벳 공부 Coverage Results" MODIFIED="1684385053874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$2108_.coverage" NAME="2108 통계학 Coverage Results" MODIFIED="1682898787228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/백준/실버" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$7675__.coverage" NAME="7675 통역사 성경이 Coverage Results" MODIFIED="1684220158671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />

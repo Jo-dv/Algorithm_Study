@@ -1,3 +1,27 @@
+for t in range(1, int(input())+1):
+    n = int(input())
+    grid = [[0] * n for _ in range(n)]
+    direction = [(0, 1), (1, 0), (0, -1), (-1, 0)]  # 주어진 문제대로 우 하 좌 상 순으로 방향 배치
+    y, x = 0, -1  # 초기 위치
+    num = 1
+
+    while num != n**2 + 1:  # + 1을 하지 않으면 아래 코드상 마지막 장소를 방문하지 않게 됨
+        for dy, dx in direction:  # 네 방향을 순회하며
+            my, mx = y + dy, x + dx  # 탐색 시작 위치 초기화
+            while 0 <= my < n and 0 <= mx < n:  # 범위가 유효하다면
+                if grid[my][mx] == 0:  # 그리고 아직 방문하지 않았다면
+                    grid[my][mx] = num  # 방분
+                    num += 1  # 다음 방문을 위해 값 갱신
+                    y, x = my, mx  # 마지막 방문 위치 갱신
+                my += dy  # 탐색 위치 갱신
+                mx += dx
+
+    print(f'#{t}')
+    for i in grid:
+        print(*i)
+
+'''
+20221024 작성 코드
 T = int(input())
 
 def cord_update(y, x, dir=1):
@@ -21,6 +45,7 @@ for i in range(1, T+1):
         ans[y][x] = j  # 좌표에 따라 값 갱신
         y, x = cord_update(y, x)  # 좌표 갱신
 
-    print(f'#{i}') 
+    print(f'#{i}')
     for j in ans:
         print(*j)
+'''

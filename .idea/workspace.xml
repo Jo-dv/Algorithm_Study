@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfac0db5-1cff-43ba-bdad-7411d994ca4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/백준/실버/8911 거북이.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/백준/골드/1107 리모컨.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/백준/실버/1931 회의실 배정.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/백준/실버/2667 단지번호붙이기.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,8 +63,8 @@
       <recent name="D:\Git\Algorithm_Study\swea\D3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.8911 거북이">
-    <configuration name="12741 두 전구" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.2667 단지번호붙이기">
+    <configuration name="1107 리모컨" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm_Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -70,12 +72,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/swea/D3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준/골드" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/12741 두 전구.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/골드/1107 리모컨.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="1931 회의실 배정" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm_Study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준/실버" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/실버/1931 회의실 배정.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,7 +130,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2948 문자열 교집합" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="2667 단지번호붙이기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm_Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -114,34 +138,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/swea/D3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준/실버" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/2948 문자열 교집합.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="4579 세상의 모든 팰린드롬 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm_Study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/swea/D3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swea/D3/4579 세상의 모든 팰린드롬 2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/실버/2667 단지번호붙이기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2667 단지번호붙이기" />
+        <item itemvalue="Python.1931 회의실 배정" />
+        <item itemvalue="Python.1107 리모컨" />
         <item itemvalue="Python.8911 거북이" />
         <item itemvalue="Python.1954 달팽이 숫자" />
-        <item itemvalue="Python.2948 문자열 교집합" />
-        <item itemvalue="Python.4579 세상의 모든 팰린드롬 2" />
-        <item itemvalue="Python.12741 두 전구" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +195,7 @@
       <workItem from="1682716518732" duration="73523000" />
       <workItem from="1683635010107" duration="26750000" />
       <workItem from="1684037825657" duration="91198000" />
-      <workItem from="1684498238505" duration="3550000" />
+      <workItem from="1684498238505" duration="18924000" />
     </task>
     <task id="LOCAL-00001" summary="230429">
       <created>1682770102703</created>
@@ -335,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684459837192</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="230519">
+      <created>1684554317166</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1684554317166</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,17 +440,39 @@
           <line>7</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/백준/골드/1107 리모컨.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/백준/실버/1931 회의실 배정.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/백준/실버/2667 단지번호붙이기.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/백준/실버/2667 단지번호붙이기.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Algorithm_Study$3750_Digit_sum.coverage" NAME="3750 Digit sum Coverage Results" MODIFIED="1684390896914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
+    <SUITE FILE_PATH="coverage/Algorithm_Study$2667_.coverage" NAME="2667 단지번호붙이기 Coverage Results" MODIFIED="1684590635622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/백준/실버" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$5203__.coverage" NAME="5203 베이비진 게임 Coverage Results" MODIFIED="1682745760961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$12741__.coverage" NAME="12741 두 전구 Coverage Results" MODIFIED="1684404922256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$3408___.coverage" NAME="3408 세가지 합 구하기 Coverage Results" MODIFIED="1684335388995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$1244__.coverage" NAME="1244 최대 상금 Coverage Results" MODIFIED="1682748325094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$2817___.coverage" NAME="2817 부분 수열의 합 Coverage Results" MODIFIED="1682836206913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$1860___.coverage" NAME="1860 진기의 최고급 붕어빵 Coverage Results" MODIFIED="1682864577480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
+    <SUITE FILE_PATH="coverage/Algorithm_Study$1107_.coverage" NAME="1107 리모컨 Coverage Results" MODIFIED="1684581293133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/백준/골드" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$2814__.coverage" NAME="2814 최장 경로 Coverage Results" MODIFIED="1682847760933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$2930_.coverage" NAME="2930 힙 Coverage Results" MODIFIED="1684239886577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$5202__.coverage" NAME="5202 화물 도크 Coverage Results" MODIFIED="1682722026017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
@@ -467,6 +498,7 @@
     <SUITE FILE_PATH="coverage/Algorithm_Study$1493___.coverage" NAME="1493 수의 새로운 연산 Coverage Results" MODIFIED="1684373449798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$13722__.coverage" NAME="13722 정사각형 판정 Coverage Results" MODIFIED="1684291959565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$8911_.coverage" NAME="8911 거북이 Coverage Results" MODIFIED="1684499557126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/백준/실버" />
+    <SUITE FILE_PATH="coverage/Algorithm_Study$1931__.coverage" NAME="1931 회의실 배정 Coverage Results" MODIFIED="1684584508366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/백준/실버" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$1697_.coverage" NAME="1697 숨바꼭질 Coverage Results" MODIFIED="1682836203083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/백준/실버" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$9280__.coverage" NAME="9280 진용이네 주차타워 Coverage Results" MODIFIED="1684202497121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$15612____.coverage" NAME="15612 체스판 위의 룩 배치 Coverage Results" MODIFIED="1684308806690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />

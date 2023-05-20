@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfac0db5-1cff-43ba-bdad-7411d994ca4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/백준/골드/1107 리모컨.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/백준/실버/1931 회의실 배정.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/백준/실버/2667 단지번호붙이기.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/백준/실버/2667 단지번호붙이기.py" beforeDir="false" afterPath="$PROJECT_DIR$/백준/실버/2667 단지번호붙이기.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +193,7 @@
       <workItem from="1682716518732" duration="73523000" />
       <workItem from="1683635010107" duration="26750000" />
       <workItem from="1684037825657" duration="91198000" />
-      <workItem from="1684498238505" duration="18924000" />
+      <workItem from="1684498238505" duration="21419000" />
     </task>
     <task id="LOCAL-00001" summary="230429">
       <created>1682770102703</created>
@@ -344,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684554317166</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="230520">
+      <created>1684591056460</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1684591056460</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +365,8 @@
     <MESSAGE value="230517" />
     <MESSAGE value="230518" />
     <MESSAGE value="230519" />
-    <option name="LAST_COMMIT_MESSAGE" value="230519" />
+    <MESSAGE value="230520" />
+    <option name="LAST_COMMIT_MESSAGE" value="230520" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -452,12 +458,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/백준/실버/2667 단지번호붙이기.py</url>
-          <line>20</line>
+          <line>21</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/백준/실버/2667 단지번호붙이기.py</url>
-          <line>3</line>
+          <line>4</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
@@ -465,7 +471,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Algorithm_Study$3750_Digit_sum.coverage" NAME="3750 Digit sum Coverage Results" MODIFIED="1684390896914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
-    <SUITE FILE_PATH="coverage/Algorithm_Study$2667_.coverage" NAME="2667 단지번호붙이기 Coverage Results" MODIFIED="1684590635622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/백준/실버" />
+    <SUITE FILE_PATH="coverage/Algorithm_Study$2667_.coverage" NAME="2667 단지번호붙이기 Coverage Results" MODIFIED="1684596241781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/백준/실버" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$5203__.coverage" NAME="5203 베이비진 게임 Coverage Results" MODIFIED="1682745760961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$12741__.coverage" NAME="12741 두 전구 Coverage Results" MODIFIED="1684404922256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$3408___.coverage" NAME="3408 세가지 합 구하기 Coverage Results" MODIFIED="1684335388995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfac0db5-1cff-43ba-bdad-7411d994ca4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/네이버부스트 캠프 코딩테스트 유형 2 - Q2.py" beforeDir="false" afterPath="$PROJECT_DIR$/네이버부스트 캠프 코딩테스트 유형 2 - Q2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +49,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Git/Algorithm_Study"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Git/Algorithm_Study&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Git\Algorithm_Study\swea\D3" />
@@ -196,7 +195,8 @@
       <workItem from="1683635010107" duration="26750000" />
       <workItem from="1684037825657" duration="91198000" />
       <workItem from="1684498238505" duration="21684000" />
-      <workItem from="1686972609099" duration="19700000" />
+      <workItem from="1686972609099" duration="19789000" />
+      <workItem from="1687041959097" duration="1677000" />
     </task>
     <task id="LOCAL-00001" summary="230429">
       <created>1682770102703</created>
@@ -359,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684596788182</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="230618">
+      <created>1687018338553</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1687018338554</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +383,8 @@
     <MESSAGE value="230518" />
     <MESSAGE value="230519" />
     <MESSAGE value="230520" />
-    <option name="LAST_COMMIT_MESSAGE" value="230520" />
+    <MESSAGE value="230618" />
+    <option name="LAST_COMMIT_MESSAGE" value="230618" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -477,7 +485,7 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test2.py</url>
+          <url>file://$PROJECT_DIR$/네이버부스트 캠프 코딩테스트 유형 2 - Q2.py</url>
           <line>36</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
@@ -508,6 +516,7 @@
     <SUITE FILE_PATH="coverage/Algorithm_Study$5201__.coverage" NAME="5201 컨테이너 운반 Coverage Results" MODIFIED="1682721858124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$1873__.coverage" NAME="1873 상호의 배틀필드 Coverage Results" MODIFIED="1682716649196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$4579____2.coverage" NAME="4579 세상의 모든 팰린드롬 2 Coverage Results" MODIFIED="1684421892092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
+    <SUITE FILE_PATH="coverage/Algorithm_Study$____2___Q2.coverage" NAME="네이버부스트 캠프 코딩테스트 유형 2 - Q2 Coverage Results" MODIFIED="1687043041971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$9480____.coverage" NAME="9480 민정이와 광직이의 알파벳 공부 Coverage Results" MODIFIED="1684385053874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$2108_.coverage" NAME="2108 통계학 Coverage Results" MODIFIED="1682898787228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/백준/실버" />
     <SUITE FILE_PATH="coverage/Algorithm_Study$7675__.coverage" NAME="7675 통역사 성경이 Coverage Results" MODIFIED="1684220158671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swea/D3" />

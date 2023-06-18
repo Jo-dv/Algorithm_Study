@@ -31,8 +31,8 @@ def solution(param0):
     answer = []
     info = {'BOOL': 1, 'SHORT': 2, 'FLOAT': 4, 'INT': 8, 'LONG': 16}
     total_size = 0
-    slot = ['.'] * 8
     start = 0
+    slot = ['.'] * 8
 
     for param in param0:
         total_size += 8 if info[param] < 16 else info[param]  # 메모리 할당, LONG 타입은 8x2 나머지는 8 만큼의 메모리를 할당

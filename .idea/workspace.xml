@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bfac0db5-1cff-43ba-bdad-7411d994ca4a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/네이버부스트 캠프 코딩테스트 유형 2 - Q2.py" beforeDir="false" afterPath="$PROJECT_DIR$/네이버부스트 캠프 코딩테스트 유형 2 - Q2.py" afterDir="false" />
-    </list>
+    <list default="true" id="bfac0db5-1cff-43ba-bdad-7411d994ca4a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,6 +194,7 @@
       <workItem from="1684498238505" duration="21684000" />
       <workItem from="1686972609099" duration="19789000" />
       <workItem from="1687041959097" duration="1677000" />
+      <workItem from="1689394216346" duration="616000" />
     </task>
     <task id="LOCAL-00001" summary="230429">
       <created>1682770102703</created>
@@ -366,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687018338554</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="230713">
+      <created>1689394327581</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1689394327581</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +389,8 @@
     <MESSAGE value="230519" />
     <MESSAGE value="230520" />
     <MESSAGE value="230618" />
-    <option name="LAST_COMMIT_MESSAGE" value="230618" />
+    <MESSAGE value="230713" />
+    <option name="LAST_COMMIT_MESSAGE" value="230713" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

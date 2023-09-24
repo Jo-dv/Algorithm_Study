@@ -32,7 +32,7 @@ def solution3(n):  # 1과 2의 특징을 조합 -> 가장 빠름, 솔루션 1에
 
     for i in range(2, int(n**0.5) + 1):
         if temp[i]:
-            for j in range(i**2, n+1, i):
+            for j in range(i**2, n+1, i):  # 소수를 가지는 수 제외
                 temp[j] = False
                 
     answer = [i for i in temp[2:] if i]

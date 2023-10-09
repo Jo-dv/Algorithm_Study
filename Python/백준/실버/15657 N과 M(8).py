@@ -15,7 +15,7 @@ class main:
             return
         for i in range(cur, self.n):
             self.answer[cnt] = self.arr[i]
-            self.perm(cnt + 1, i)
+            self.perm(cnt + 1, i)  # cnt 0 -> 1 -> .. m 도달 후, 다시 0인 시점으로 돌아와 cursor 변경
 
 
 problem = main()

@@ -43,23 +43,26 @@ class Main:
                 if self.grid[r][c] == -1:
                     cleaner.append([r, c])  # 먼저 들어오는 값이 상, 다음이 하
 
-        r1, c1 = cleaner[0]
-        r2, c2 = cleaner[1]
+        r1, c1 = cleaner[0]  # 반시계 방향
         self.grid[r1][1] = 0  # 첫 값을 이동한 후에는 공청기에 의해 옮겨질 값이 없기 때문에 0으로 처리
-        self.grid[r2][1] = 0
-        for i in range(2, self.c):  # 좌 -> 우
+        for i in range(2, self.c):
             self.grid[r1][i] = clear_grid[r1][i-1]
-            self.grid[r2][i] = clear_grid[r2][i-1]
-        for i in range(r1-1, -1, -1):  # 상단 하 -> 상
+        for i in range(r1-1, -1, -1):
             self.grid[i][self.c-1] = clear_grid[i+1][self.c-1]
-        for i in range(r2+1, self.r):  # 하단 상 -> 하
-            self.grid[i][self.c-1] = clear_grid[i-1][self.c-1]
-        for i in range(self.c-2, -1, -1):  # 우 -> 좌
+        for i in range(self.c-2, -1, -1):
             self.grid[0][i] = clear_grid[0][i+1]
-            self.grid[self.r-1][i] = clear_grid[self.r-1][i+1]
-        for i in range(1, r1):  # 상단 상 -> 하
+        for i in range(1, r1):
             self.grid[i][0] = clear_grid[i-1][0]
-        for i in range(self.r-2, r2, -1):  # 하단 하 -> 상
+
+        r2, c2 = cleaner[1]  # 시계 방향
+        self.grid[r2][1] = 0
+        for i in range(2, self.c):
+            self.grid[r2][i] = clear_grid[r2][i-1]
+        for i in range(r2+1, self.r):
+            self.grid[i][self.c-1] = clear_grid[i-1][self.c-1]
+        for i in range(self.c-2, -1, -1):
+            self.grid[self.r-1][i] = clear_grid[self.r-1][i+1]
+        for i in range(self.r-2, r2, -1):
             self.grid[i][0] = clear_grid[i+1][0]
 
 

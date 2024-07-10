@@ -14,7 +14,7 @@ public class BOJ_2143_두배열의합 {
 	static int t;
 	static int n, m;
 	static int[] a, b;
-	static long answer = 0;
+	static long answer = 0;  // int로 설정할 경우 오버플로우가 발생할 수 있음
 	
 	public static void main(String[] args) throws IOException {
 		t = Integer.parseInt(br.readLine());
@@ -62,6 +62,5 @@ public class BOJ_2143_두배열의합 {
 			answer += hash.getOrDefault(t - num, 0);
 		
 		System.out.println(answer);
-		System.out.println(1000000 * 10000000);
 	}
 }

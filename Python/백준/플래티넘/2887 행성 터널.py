@@ -41,25 +41,20 @@ class Main:
     def cal_cost(p1, p2):
         return min(abs(p1.x - p2.x), abs(p1.y - p2.y), abs(p1.z - p2.z))
 
+    def sort_and_add_edges(self, planet, edges, key):
+        planet.sort(key=key)
+        for i in range(self.n - 1):
+            cost = Main.cal_cost(planet[i], planet[i + 1])
+            edges.append(Edge(planet[i].index, planet[i + 1].index, cost))
+
     def solve(self):
         planet = [Node(i, x, y, z) for i, (x, y, z) in enumerate(self.cord)]
         edges = []
 
         # 각 좌표 별로 모든 노드 쌍을 고려하지 않고 N-1개의 터널을 만들 수 있는 최소의 노드만 선택
-        planet.sort(key=lambda node: node.x)
-        for i in range(self.n - 1):
-            cost = self.cal_cost(planet[i], planet[i + 1])
-            edges.append(Edge(planet[i].index, planet[i + 1].index, cost))
-
-        planet.sort(key=lambda node: node.y)
-        for i in range(self.n - 1):
-            cost = self.cal_cost(planet[i], planet[i + 1])
-            edges.append(Edge(planet[i].index, planet[i + 1].index, cost))
-
-        planet.sort(key=lambda node: node.z)
-        for i in range(self.n - 1):
-            cost = self.cal_cost(planet[i], planet[i + 1])
-            edges.append(Edge(planet[i].index, planet[i + 1].index, cost))
+        self.sort_and_add_edges(planet, edges, key=lambda node: node.x)
+        self.sort_and_add_edges(planet, edges, key=lambda node: node.y)
+        self.sort_and_add_edges(planet, edges, key=lambda node: node.z)
 
         edges.sort(key=lambda edge: edge.cost)  # 최소 비용 계산을 위한 간선 정보 정렬
 

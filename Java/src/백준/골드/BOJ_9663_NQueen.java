@@ -16,7 +16,7 @@ public class BOJ_9663_NQueen {
 	}
 	
 	static boolean is_valid(int[] board, int row, int col) {
-		for (int i = 0; i < row; i++)
+		for (int i = 0; i < row; i++)  // 현재 탐색 위치 기준 위에 행들만 검사 -> 순차적으로 탐색을 진행하므로 아직 두지 않은 곳은 검사할 필요 없음
             if (board[i] == col || board[i] - i == col - row || board[i] + i == col + row)  // 각각 열, 대각선 확인
                 return false;
         

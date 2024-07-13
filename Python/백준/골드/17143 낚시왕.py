@@ -59,9 +59,9 @@ class Main:
             if self.grid[current_shark.r][current_shark.c] is None:  # 상어가 없다면
                 self.grid[current_shark.r][current_shark.c] = current_shark
             else:  # 상어를 위치시키려는 곳에 상어가 있다면
-                if self.grid[current_shark.r][current_shark.c].size > current_shark.size:
-                    self.sharks.remove(current_shark)  # 현재 상어는 위치할 수 없으면 기존 상어가 잡아먹음
-                else:  # 현재 상어가 기존 상어 잡아 먹음
+                if self.grid[current_shark.r][current_shark.c].size > current_shark.size:  # 현재 상어 잡아먹힘
+                    self.sharks.remove(current_shark)
+                else:  # 기존 상어 잡아 먹음 -> 어차피 크기가 큰 상어가 나중에 다 잡아먹기 때문에 크기가 같아도 지금 잡아먹어도 됨
                     self.sharks.remove(self.grid[current_shark.r][current_shark.c])
                     self.grid[current_shark.r][current_shark.c] = current_shark
 

@@ -1,3 +1,6 @@
+from typing import Optional, List
+
+
 class shark:
     def __init__(self, r, c, s, d, z):
         self.r = r
@@ -11,7 +14,7 @@ class Main:
     def __init__(self):
         self.r, self.c, self.m = map(int, input().split())
         self.info = [list(map(int, input().split())) for _ in range(self.m)]
-        self.grid = [[None] * self.c for _ in range(self.r)]
+        self.grid: List[List[Optional[shark]]] = [[None] * self.c for _ in range(self.r)]
         self.sharks = []
         self.answer = 0
 
@@ -22,17 +25,15 @@ class Main:
             self.sharks.append(shark_info)
 
     def fishing(self, c):
-        get_shark: shark
         for r in range(self.r):  # 땅과 가까운 순서대로
             if self.grid[r][c] is not None:  # 상어가 있다면
-                get_shark = self.grid[r][c]
+                get_shark: shark = self.grid[r][c]
                 self.sharks.remove(get_shark)
                 self.answer += get_shark.size
                 break  # 한 번 잡으면 끝
         return
 
     def move_shark(self):
-        current_shark: shark
         for current_shark in self.sharks:
             if current_shark.direction in [1, 2]:  # 상, 하
                 for _ in range(current_shark.speed % ((self.r - 1) * 2)):

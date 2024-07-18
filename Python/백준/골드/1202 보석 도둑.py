@@ -1,6 +1,5 @@
 import sys
 import heapq
-from collections import deque
 
 input = lambda: sys.stdin.readline()
 
@@ -16,13 +15,13 @@ class Main:
         self.jewels.sort()
         self.bags.sort()
 
-        self.jewels = deque(self.jewels)
         heap = []
+        i = 0
 
         for bag in self.bags:
-            while self.jewels and self.jewels[0][0] <= bag:
-                heapq.heappush(heap, -self.jewels[0][1])
-                self.jewels.popleft()
+            while i < self.n and self.jewels[i][0] <= bag:
+                heapq.heappush(heap, -self.jewels[i][1])
+                i += 1
 
             if heap:
                 self.answer += abs(heapq.heappop(heap))

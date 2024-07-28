@@ -1,5 +1,6 @@
 from collections import deque
 
+
 class Main:
     def __init__(self):
         self.n = int(input())

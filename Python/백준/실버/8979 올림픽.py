@@ -1,6 +1,3 @@
-from collections import Counter
-
-
 class Main:
     def __init__(self):
         self.n, self.k = map(int, input().split())

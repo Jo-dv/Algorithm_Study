@@ -21,13 +21,13 @@ public class BOJ_6603_로또 {
 			test_case = new ArrayList<>();
 			st = new StringTokenizer(br.readLine());
 			
-			while(st.hasMoreTokens())
+			while(st.hasMoreTokens())  // 다음 토큰이 있을 때까지
 				test_case.add(Integer.parseInt(st.nextToken()));
 			k = test_case.get(0);
 			if(k == 0)
 				break;
 			
-			s = test_case.subList(1, k + 1).toArray();
+			s = test_case.subList(1, k + 1).toArray();  // 배열 접근과 마찬가지이므로 끝에 k가 아닌 k - 1이 되어야 함
 			answer = new ArrayList<>();
 			search(0, 0);
 			sb.append("\n");
@@ -46,8 +46,8 @@ public class BOJ_6603_로또 {
 		}
 		
 		answer.add((Integer) s[idx]);
-		search(idx + 1, cnt + 1);  // 현재 값 선택하고, 선택된 수 갱신
+		search(idx + 1, cnt + 1);  // 현재 값을 선택했으니 선택된 수의 개수를 갱신하고, 다음 실행에서는 다음 값을 선택해야
 		answer.remove(answer.size() - 1);
-		search(idx + 1, cnt);
+		search(idx + 1, cnt);  // 현재 수 선택 안 함
 	}
 }

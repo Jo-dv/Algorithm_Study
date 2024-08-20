@@ -12,10 +12,9 @@ public class BOJ_1799_비숍 {
     static StringTokenizer st;
     static int size;
     static int[][] board;
+    static int[][] directions = {{-1, -1}, {1, -1}, {-1, 1}, {1, 1}};
     static List<int[]> white = new ArrayList<>();
     static List<int[]> black = new ArrayList<>();
-    static int[] mask_white = new int[2];  // 0: 좌상단 - 우하단 대각선, 1: 좌하단 - 우상단 대각선
-    static int[] mask_black = new int[2];
     static int[] answer = new int[2];
 
     public static void main(String[] args) throws IOException {
@@ -36,36 +35,29 @@ public class BOJ_1799_비숍 {
         for (int y = 0; y < size; y++)
             for (int x = 0; x < size; x++)
                 if (board[y][x] == 1)
-                    if ((y + x) % 2 == 0)
+                    if ((y + x) % 2 == 0)  // 흑백은 서로 간섭하지 못하는 영역이므로 각각을 나눠서 체크함
                         white.add(new int[]{y, x});
                     else
                         black.add(new int[]{y, x});
     }
+    
+	static boolean check(int y, int x) {  // 가능한 구역에 9(비숍)이 있는지 확인
+		for(int[] d: directions) {
+			int my = y + d[0];
+			int mx = x + d[1];
+			
+			while(0 <= my && my < size && 0 <= mx && mx < size) {
+				if(board[my][mx] == 9)
+					return false;
+				my += d[0];
+				mx += d[1];
+			}
+		}
+		
+		return true;
+	}
 
-    static boolean check(int y, int x, int[] mask) {
-        int left = 1 << (y - x + (size - 1));  // 음수 인덱스 보정
-        int right = 1 << (y + x);
-
-        return (mask[0] & left) == 0 && (mask[1] & right) == 0;
-    }
-
-    static void placeBishop(int y, int x, int[] mask) {
-        int left = 1 << (y - x + (size - 1));
-        int right = 1 << (y + x);
-
-        mask[0] |= left;
-        mask[1] |= right;
-    }
-
-    static void removeBishop(int y, int x, int[] mask) {
-        int left = 1 << (y - x + (size - 1));
-        int right = 1 << (y + x);
-
-        mask[0] &= ~left;
-        mask[1] &= ~right;
-    }
-
-    static void search(int idx, int count, List<int[]> bishops, int[] mask, boolean is_black) {
+    static void search(int idx, int count, List<int[]> bishops, boolean is_black) {
         if (idx == bishops.size()) {
             if (is_black)
                 answer[1] = Math.max(answer[1], count);
@@ -78,18 +70,18 @@ public class BOJ_1799_비숍 {
         int y = bishops.get(idx)[0];
         int x = bishops.get(idx)[1];
 
-        if (check(y, x, mask)) {
-            placeBishop(y, x, mask);
-            search(idx + 1, count + 1, bishops, mask, is_black);
-            removeBishop(y, x, mask);
+        if (check(y, x)) {
+        	board[y][x] = 9;
+            search(idx + 1, count + 1, bishops, is_black);
+            board[y][x] = 1;
         }
 
-        search(idx + 1, count, bishops, mask, is_black);  //  현재 위치에 두지 않는 경우도 고려
+        search(idx + 1, count, bishops, is_black);  // 현재 위치에 두지 않는 경우도 고려
     }
 
     static void solve() {
         find_bishops();
-        search(0, 0, white, mask_black, false);
-        search(0, 0, black, mask_white, true);
+        search(0, 0, white, false);
+        search(0, 0, black, true);
     }
 }

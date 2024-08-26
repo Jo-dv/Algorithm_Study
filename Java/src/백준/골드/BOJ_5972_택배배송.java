@@ -50,8 +50,8 @@ public class BOJ_5972_택배배송 {
 		while(!pq.isEmpty()) {
 			Edge current = pq.poll();
 			
-//			if(cost[current.b] < current.c)
-//				continue;
+			if(cost[current.b] < current.c)
+				continue;
 			
 			for (Edge next: edges[current.b]) {
 				if(current.c + next.c < cost[next.b]) {

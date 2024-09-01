@@ -36,7 +36,7 @@ public class BOJ_14453_HoofPaperScissors {
         
         for (int i = 0; i <= n; i++) {
             // p를 내다가 s, h로 바꾸는 경우
-            int ps = h_prefix[i] + (p_prefix[n] - p_prefix[i]);
+            int ps = h_prefix[i] + (p_prefix[n] - p_prefix[i]);  // i까지는 p로 이기다가 i + 1부터 끝까지(n - i) 바꿔서 이기는 수
             int ph = h_prefix[i] + (s_prefix[n] - s_prefix[i]);
 
             // s를 내다가 p, h로 바꾸는 경우
@@ -50,5 +50,4 @@ public class BOJ_14453_HoofPaperScissors {
             answer = Math.max(answer, Math.max(ps, Math.max(ph, Math.max(sp, Math.max(sh, Math.max(hp, hs))))));
         }
 	}
-
 }

@@ -63,19 +63,18 @@ public class BOJ_2503_숫자야구 {
                     int expected_num = expectation.get(i);
                     if (expected_num == nums.charAt(i) - '0')
                         strike_cnt++;
-                    else if (nums.contains(String.valueOf(expected_num)))
+                    else if (nums.contains(String.valueOf(expected_num)))  // 위치가 일치하진 않지만 숫자를 포함하는 경우
                         ball_cnt++;
                 }
 
-                if (strike_cnt != game[1] || ball_cnt != game[2]) {
+                if (!(strike_cnt == game[1] && ball_cnt == game[2])) {
                     isValid = false;
                     break;
                 }
             }
 
-            if (!isValid) {
+            if (!isValid)
                 iter.remove();
-            }
         }
 
         answer = expectations.size();

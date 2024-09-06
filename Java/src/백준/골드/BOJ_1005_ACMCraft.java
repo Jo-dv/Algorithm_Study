@@ -72,5 +72,4 @@ public class BOJ_1005_ACMCraft {
 		
 		sb.append(time[w]).append("\n");
 	}
-
 }

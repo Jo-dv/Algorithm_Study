@@ -70,6 +70,17 @@ public class BOJ_4577_소코반 {
 		
 		return target;
 	}
+	
+	static void move_player(Player player, int my, int mx, char next_point) {
+		grid[player.y][player.x] = player.current;  // 플레이어가 있던 자리 원상 복귀
+		
+		player.current = grid[my][mx];  // 이동한 곳의 공간
+		player.state = grid[my][mx] == next_point ? 'W' : 'w';
+        
+		player.y = my;
+		player.x = mx;
+		grid[my][mx] = player.state;  // 플레이어 이동
+	}
 
 	static boolean move(Player player) {
 		int len = command.length();
@@ -85,24 +96,8 @@ public class BOJ_4577_소코반 {
 				if(grid[my][mx] == '#')  // 벽이면 이동 불가
 					continue;
 				
-				if(grid[my][mx] == '.') {
-					grid[player.y][player.x] = player.current;  // 플레이어가 있던 자리 원상 복귀
-					player.y = my;
-					player.x = mx;
-					
-					player.current = '.';  // 이동한 곳의 공간
-					player.state = 'w';
-					grid[my][mx] = player.state;  // 플레이어 이동
-				}
-				else if(grid[my][mx] == '+') {
-					grid[player.y][player.x] = player.current;  // 플레이어가 있던 자리 원상 복귀
-					player.y = my;
-					player.x = mx;
-					
-					player.current = '+';
-					player.state = 'W';
-					grid[my][mx] = player.state;
-				}
+				if(grid[my][mx] == '.' || grid[my][mx] == '+')
+					move_player(player, my, mx, '.');
 				else {  // 벽돌인 경우
 					int next_y = my + d[0];  // 벽돌을 옮길 위치
 					int next_x = mx + d[1];
@@ -125,13 +120,7 @@ public class BOJ_4577_소코반 {
 						else
 							grid[my][mx] = '.';  // 목표점이 아니라면 빈 공간 밖에 없음
 						
-						grid[player.y][player.x] = player.current;  // 플레이어를 옮길 것이므로 현재 밟고 있는 공간 초기화
-						player.y = my;
-						player.x = mx;
-						
-						player.current = grid[my][mx];  // player 이동
-						player.state = player.current == '+' ? 'W' : 'w';  // 이동한 공간에 따라 형태 변경
-						grid[my][mx] = player.state;  // 상태 변경 반영
+						move_player(player, my, mx, '+');
 						
 						if(target == 0)  // 현재 움직이 끝났을 때, 모든 박스를 옮겼다면 게임 즉시 종료
 							return true;

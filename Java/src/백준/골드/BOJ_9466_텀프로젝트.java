@@ -51,12 +51,12 @@ public class BOJ_9466_텀프로젝트 {
         if (!visited[next])  // 다음 노드를 아직 방문하지 않았다면
             dfs(next);
         else if (!done[next])  // 사이클 확인
-            find_cycle(next, current);
+            find_cycle(next);
 
         done[current] = true;  // 사이클 탐색 종료
     }
 
-    static void find_cycle(int start, int current) {
+    static void find_cycle(int start) {
         count++;  // 자기 자신
         for (int i = students[start]; i != start; i = students[i])  // 다음 노드가 주어진 start와 다르면
             count++;

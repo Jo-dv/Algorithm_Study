@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.TreeSet;
 
-public class BOJ_11656 {
+public class BOJ_11656_접미사배열 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static String s;
 	static TreeSet<String> suffix = new TreeSet<>();

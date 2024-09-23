@@ -55,12 +55,12 @@ public class BOJ_1043_거짓말 {
 		x = find(x);
 		y = find(y);
 		
-		if(true_people.contains(x))
+		if(true_people.contains(x))  // x가 진실을 아는 사람이라면
 			parents[y] = x;
-		else if(true_people.contains(y))
+		else if(true_people.contains(y))  // y가 진실을 아는 사람이라면
 			parents[x] = y;
 		else
-			parents[y] = x;
+			parents[y] = x;  // 일반 연결
 
 			
 	}
@@ -69,27 +69,27 @@ public class BOJ_1043_거짓말 {
 		parents = init_parents();
 		
 		int len = 0;
-		if (!true_people.isEmpty()) {
+		if (!true_people.isEmpty()) {  // 진실을 아는 사람들이 있다면
 			len = true_people.size();
             for (int i = 1; i < len; i++)
-                union(true_people.get(0), true_people.get(i));
+                union(true_people.get(0), true_people.get(i));  // 진실을 아는 사람들끼리 연결
 		}
 
-		for(int i = 1; i <= m; i++) {
+		for(int i = 1; i <= m; i++) { // 파티 참여자들끼리 연결
 			len = participants[i].size();
 			for(int j = 0; j < len - 1; j++)
 				union(participants[i].get(j), participants[i].get(j + 1));
 		}
-		
+
 		int answer = 0;
         for (int i = 1; i <= m; i++) {
-            boolean canLie = true;
-            for (int person : participants[i])
-                if (true_people.contains(find(person))) {
-                    canLie = false;
-                    break;
+            boolean lie = true;
+            for (int person : participants[i])  // 각 파티의 참여자들에 대해
+                if (true_people.contains(find(person))) {  // 참여자들이 진실을 아는 사람들과 연결되어 있는지 확인
+                    lie = false;  // 진실을 아는 사람과 연결되어 있다면 거짓말을 할 수 없으므로
+                    break;  // 탐색 종료
                 }
-            if (canLie)
+            if (lie)
                 answer++;
         }
 

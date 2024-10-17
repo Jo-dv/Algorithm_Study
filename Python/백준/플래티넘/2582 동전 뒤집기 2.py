@@ -1,14 +1,17 @@
 import random
-from math import exp
+import math
 
 
 class Main:
     def __init__(self):
         self.n = int(input())
         self.board = [list(input().strip()) for _ in range(self.n)]
-        self.T = 1 * 2  # 초기 온도
+        self.T = 2.5  # 초기 온도
         self.cooling_rate = 0.9999
         self.max_iterations = 5000
+
+    def flip_coin(self, coin):
+        return 'H' if coin == 'T' else 'T'
 
     def count_tails(self, board):
         tails_count = 0
@@ -17,14 +20,20 @@ class Main:
         return tails_count
 
     def generate_neighbor(self, current_board):
-        col_to_flip = random.randint(0, self.n - 1)  # 랜덤하게 뒤집을 열을 선택
+        # 한 번의 행동으로 하나의 행 또는 열을 뒤집음
+        if random.random() < 0.5:
+            # 행을 뒤집음
+            r = random.randint(0, self.n - 1)
+            new_board = [r[:] for r in current_board]
+            new_board[r] = [self.flip_coin(coin) for coin in new_board[r]]
+        else:
+            # 열을 뒤집음
+            c = random.randint(0, self.n - 1)
+            new_board = [r[:] for r in current_board]
+            for row in new_board:
+                row[c] = self.flip_coin(row[c])
 
-        new_board = [r[:] for r in current_board]  # 현재 보드를 복사
-
-        for r in range(self.n):  # 선택한 열을 뒤집음
-            new_board[r][col_to_flip] = 'H' if new_board[r][col_to_flip] == 'T' else 'T'
-
-        return new_board  # 새로운 보드 반환
+        return new_board
 
     def simulated_annealing(self):
         current_board = self.board
@@ -36,12 +45,14 @@ class Main:
             next_energy = self.count_tails(new_board)
             delta_E = next_energy - current_energy
 
-            if delta_E < 0 or random.random() < exp(-delta_E / self.T):
+            # 수용 확률을 계산하여 현재 상태를 업데이트
+            if delta_E < 0 or random.random() < math.exp(-delta_E / self.T):
                 current_board = new_board
                 current_energy = next_energy
 
             best_energy = min(best_energy, current_energy)
 
+            # 온도를 감소시킴
             self.T *= self.cooling_rate
 
         return best_energy
@@ -49,7 +60,6 @@ class Main:
     def solve(self):
         answer = self.simulated_annealing()
         print(answer)
-
 
 problem = Main()
 problem.solve()

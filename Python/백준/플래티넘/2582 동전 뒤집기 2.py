@@ -1,5 +1,5 @@
 import random
-import math
+from math import exp
 
 
 class Main:
@@ -8,7 +8,7 @@ class Main:
         self.board = [list(input().strip()) for _ in range(self.n)]
         self.T = 2.5  # 초기 온도
         self.cooling_rate = 0.9999
-        self.max_iterations = 5000
+        self.max_iterations = 10000
 
     def flip_coin(self, coin):
         return 'H' if coin == 'T' else 'T'
@@ -46,7 +46,7 @@ class Main:
             delta_E = next_energy - current_energy
 
             # 수용 확률을 계산하여 현재 상태를 업데이트
-            if delta_E < 0 or random.random() < math.exp(-delta_E / self.T):
+            if delta_E < 0 or random.random() < exp(-delta_E / self.T):
                 current_board = new_board
                 current_energy = next_energy
 
@@ -60,6 +60,7 @@ class Main:
     def solve(self):
         answer = self.simulated_annealing()
         print(answer)
+
 
 problem = Main()
 problem.solve()

@@ -1,152 +1,182 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 public class Main {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static StringTokenizer st;
-	static int n, m;
+	static int n, m, k;
 	static int[][] map;
-	static int y, x;
-	static boolean[] arrive;
-	static Pos[] people;
-	static Pos[] stores;
-	static int time = 0;
-	static int[][] directions = {{-1, 0}, {0, -1}, {0, 1}, {1, 0}};
-	
-	static class Pos {
-		int y, x;
-		
-		public Pos(int y, int x) {
+	static HashMap<String, PriorityQueue<Integer>> guns;
+	static Player[] players;
+	static int y, x, d, s;
+	static int[][] directions = { { -1, 0 }, { 0, 1 }, { 1, 0 }, { 0, -1 } };
+
+	static class Player {
+		int y, x, d, s, gun, score;
+
+		public Player(int y, int x, int d, int s, int gun, int score) {
 			this.y = y;
 			this.x = x;
-		}
+			this.d = d;
+			this.s = s;
+			this.gun = gun;
+			this.score = score;
+		}	
 	}
-	
+
 	public static void main(String[] args) throws IOException {
 		st = new StringTokenizer(br.readLine());
 		n = Integer.parseInt(st.nextToken());
 		m = Integer.parseInt(st.nextToken());
+		k = Integer.parseInt(st.nextToken());
 		map = new int[n][n];
-		arrive = new boolean[m + 1];
-		people = new Pos[m + 1];
-		stores = new Pos[m + 1];
-		for(int i = 0; i < n; i++) {
+		guns = new HashMap<>();
+		for (int i = 0; i < n; i++) {
 			st = new StringTokenizer(br.readLine());
-			for(int j = 0; j < n; j++) {
+			for (int j = 0; j < n; j++) {
+				String key = i + ", " + j;
 				map[i][j] = Integer.parseInt(st.nextToken());
+				guns.put(key, new PriorityQueue<>((o1, o2) -> o2 - o1));
+				guns.get(key).add(map[i][j]);
 			}
 		}
-		for(int i = 1; i <= m; i++) {
+		players = new Player[m];
+		for (int i = 0; i < m; i++) {
 			st = new StringTokenizer(br.readLine());
 			y = Integer.parseInt(st.nextToken()) - 1;
 			x = Integer.parseInt(st.nextToken()) - 1;
-			stores[i] = new Pos(y, x);
-			people[i] = new Pos(-1, -1);
+			d = Integer.parseInt(st.nextToken());
+			s = Integer.parseInt(st.nextToken());
+			players[i] = new Player(y, x, d, s, 0, 0);
 		}
 		
 		solve();
 	}
 	
-	static int[][] connect_road(int i) {
-		Pos store = stores[i];  // 해당 편의점을 기점으로 가장 가까운 편의점 탐색
-		int[][] visited = new int[n][n];
-		visited[store.y][store.x] = 1;
-		ArrayDeque<Pos> dq = new ArrayDeque<>();
-		dq.add(store);
-		
-		while(!dq.isEmpty()) {
-			Pos current = dq.poll();
-			for(int[] d: directions) {
-				int my = current.y + d[0], mx = current.x + d[1];
-				if(0 <= my && my < n && 0 <= mx && mx < n && visited[my][mx] == 0 && map[my][mx] != -1) {
-					visited[my][mx] = visited[current.y][current.x] + 1;
-					dq.add(new Pos(my, mx));
+	static void move_loser(Player loser) {
+		for(int i = 0; i < 4; i++) {
+			int[] d = directions[loser.d];
+			boolean flag = false;
+			int my = loser.y + d[0];
+			int mx = loser.x + d[1];
+			boolean range = my < 0 || my >= n || mx < 0 || mx >= n;
+			if(range) {
+				loser.d = (loser.d + 1) % 4;
+				continue;
+			}
+			for(Player player: players) {
+				if(my == player.y && mx == player.x) {
+					loser.d = (loser.d + 1) % 4;
+					flag = true;
+					break;
 				}
 			}
+			if(flag) {
+				continue;
+			}
+			loser.y = my;
+			loser.x = mx;
+			if(!guns.get(loser.y + ", " + loser.x).isEmpty()) {
+				int put_gun = loser.gun;
+				loser.gun = guns.get(loser.y + ", " + loser.x).poll();
+				if(put_gun > 0) {
+					guns.get(loser.y + ", " + loser.x).add(put_gun);
+				}
+			}
+			break;
 		}
-		
-		return visited;
 	}
 	
-	static void find_base(int i) {
-		int[][] road = connect_road(i);
-		Pos man = people[i];  // 이 사람의 베이스켐프를 지정할 것
-		int distance = Integer.MAX_VALUE;
+	static void fight_player(Player player, Player enemy) {
+		int player_atk = player.s + player.gun;
+		int enemy_atk = enemy.s + enemy.gun;
+		if(player_atk > enemy_atk) {
+			player.score += Math.abs(player_atk - enemy_atk);
+			if(enemy.gun > 0) {
+				guns.get(enemy.y + ", " + enemy.x).add(enemy.gun);
+				enemy.gun = 0;
+			}
+			get_gun(player);
+			move_loser(enemy);
+		} else if(player_atk == enemy_atk) {
+			if(player.s > enemy.s) {
+				player.score += Math.abs(player_atk - enemy_atk);
+				if(enemy.gun > 0) {
+					guns.get(enemy.y + ", " + enemy.x).add(enemy.gun);
+					enemy.gun = 0;
+				}
+				get_gun(player);
+				move_loser(enemy);
+			} else if(player.s < enemy.s) {
+				enemy.score += Math.abs(player_atk - enemy_atk);
+				if(player.gun > 0) {
+					guns.get(player.y + ", " + player.x).add(player.gun);
+					player.gun = 0;
+				}
+				get_gun(enemy);
+				move_loser(player);
+			}
+		} else {
+			enemy.score += Math.abs(player_atk - enemy_atk);
+			if(player.gun > 0) {
+				guns.get(player.y + ", " + player.x).add(player.gun);
+				player.gun = 0;
+			}
+			get_gun(enemy);
+			move_loser(player);
+		}
+	}
+	
+	static void get_gun(Player player) {
+		int put_gun = player.gun;
+		String pos = player.y + ", " + player.x;
+		if(!guns.get(pos).isEmpty() && guns.get(pos).peek() > put_gun) {
+			player.gun = guns.get(pos).poll();
+			guns.get(pos).add(put_gun);
+		}
+	}
 
-		for(int y = 0; y < n; y++) {
-			for(int x = 0; x < n; x++) {
-				if(map[y][x] == 1 && road[y][x] != 0 && distance > road[y][x]) {
-					distance = road[y][x];
-					man.y = y;
-					man.x = x;
-				}
+	static void move_player() {
+		for (int player = 0; player < m; player++) {
+			boolean fight = false;
+			int[] d = directions[players[player].d];
+			int my = players[player].y + d[0];
+			int mx = players[player].x + d[1];
+			if (my < 0 || my >= n || mx < 0 || mx >= n) {
+				my = players[player].y - d[0];
+				mx = players[player].x - d[1];
+				players[player].d = (players[player].d + 2) % 4;
 			}
-		}
-		
-		map[man.y][man.x] = -1;  // 이동 불가의 의미
-	}
-	
-	static void go_store(int i) {
-		int[][] road = connect_road(i);
-		Pos man = people[i];  // 이 사람의 베이스켐프를 지정할 것
-		int distance = Integer.MAX_VALUE;
-		int final_y = -1, final_x = -1;
-		
-		for(int[] d: directions) {
-			int my = man.y + d[0], mx = man.x + d[1];
-			if(0 <= my && my < n && 0 <= mx && mx < n && road[my][mx] != 0 && distance > road[my][mx]) {
-				distance = road[my][mx];
-				final_y = my;
-				final_x = mx;
-			}
-		}
-		
-		man.y = final_y;
-		man.x = final_x;
-	}
-	
-	static void update_info() {
-		for(int i = 1; i <= m; i++) {
-			Pos man = people[i];
-			Pos store = stores[i];
-			if(man.y == store.y && man.x == store.x) {
-				arrive[i] = true;
-				map[store.y][store.x] = -1;
-				
-			}
-		}
-	}
-	
-	static boolean check_terminate() {
-		for(int i = 1; i <= m; i++) {
-			if(!arrive[i]) {
-				return false;
-			}
-		}
-		return true;
-	}
-	
-	static void solve() {
-		while(true) {
-			time += 1;
-			for(int i = 1; i <= m; i++) {
-				if(arrive[i] || people[i].y == -1 && people[i].x == -1) {  // 편의점에 도착했거나, 아직 베이스켐프가 아니라면
+			players[player].y = my;
+			players[player].x = mx;
+			for(int enemy = 0; enemy < m; enemy++) {
+				if(player == enemy) {
 					continue;
 				}
-				go_store(i);
+				if(players[player].y == players[enemy].y && players[player].x == players[enemy].x) {
+					fight_player(players[player], players[enemy]);
+					fight = true;
+					break;
+				}
 			}
-			update_info();  // 모든 사람들의 이동이 끝났을 때, 편의점을 막을지 말지 확인해야 함
-			if(check_terminate()) {  // 종료 유무 체크
-				break;
-			}
-			if(time <= m) {  // 사람들을 베이스캠프로
-				find_base(time);
+			if(!fight) {
+				get_gun(players[player]);
 			}
 		}
+	}
 
-		System.out.println(time);
+	static void solve() {
+		for (int turn = 1; turn <= k; turn++) {
+			move_player();
+		}
+		StringBuilder sb = new StringBuilder();
+		for(Player player: players)
+			sb.append(player.score).append(" ");
+		System.out.println(sb);
 	}
 }

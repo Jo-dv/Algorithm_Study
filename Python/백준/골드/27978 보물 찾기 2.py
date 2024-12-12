@@ -39,7 +39,6 @@ class Main:
                 my = y + dy
                 mx = x + dx
                 if 0 <= my < self.h and 0 <= mx < self.w and self.grid[my][mx] != '#':
-                    next_cost = float('inf')
                     if (my, mx) in [(y - 1, x + 1), (y, x + 1), (y + 1, x + 1)]:
                         next_cost = cost
                     else:

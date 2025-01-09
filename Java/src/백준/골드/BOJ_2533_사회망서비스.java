@@ -43,7 +43,7 @@ public class BOJ_2533_사회망서비스 {
 			if(!visited[next]) {
 				dfs(next, visited);
 				dp[current][0] += dp[next][1];  // 자기 자신이 얼리어답터가 아니면 자식은 무조건 얼리어답터여야 함
-				dp[current][1] += Math.min(dp[next][0], dp[next][1]);
+				dp[current][1] += Math.min(dp[next][0], dp[next][1]);  // 자기 자신이 얼리어답터라면 자식이 얼리어답터여도 되고 아니어도 되므로 최소가 되는 거 선택
 			}
 		}
 		
@@ -52,7 +52,7 @@ public class BOJ_2533_사회망서비스 {
 	static void solve() {
 		boolean[] visited = new boolean[n + 1];
 		dfs(1, visited);
-		System.out.println(Math.min(dp[1][0], dp[1][1]));
+		System.out.println(Math.min(dp[1][0], dp[1][1]));  // 탐색점 기준 최소
 	}
 
 }

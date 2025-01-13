@@ -22,11 +22,6 @@ public class BOJ_19236_청소년상어 {
 			this.x = x;
 			this.d = d;
 		}
-
-		@Override
-		public String toString() {
-			return "Pos [y=" + y + ", x=" + x + ", direction=" + d + "]";
-		}
 	}
 	
 	static class Fish extends Pos {
@@ -35,11 +30,6 @@ public class BOJ_19236_청소년상어 {
 		public Fish(int y, int x, int direction, boolean dead) {
 			super(y, x, direction);
 			this.dead = dead;
-		}
-
-		@Override
-		public String toString() {
-			return "Fish [y=" + y + ", x=" + x + ", dead=" + dead + "]";
 		}
 	}
 
@@ -70,10 +60,10 @@ public class BOJ_19236_청소년상어 {
 				int mx = fish.x + directions[md][1];
 				
 				if(0 <= my && my < 4 && 0 <= mx && mx < 4 && !(my == shark.y && mx == shark.x)) {
-					if(new_grid[my][mx] == 0) {
+					if(new_grid[my][mx] == 0) {  // 빈 칸
 						new_grid[my][mx] = new_grid[fish.y][fish.x];
 						new_grid[fish.y][fish.x] = 0;
-					} else {
+					} else {  // 물고기 있음
 						int existing_fish = new_grid[my][mx];
 						new_grid[my][mx] = new_grid[fish.y][fish.x];
 						new_grid[fish.y][fish.x] = existing_fish;
@@ -105,16 +95,16 @@ public class BOJ_19236_청소년상어 {
 		
 		move_fish(new_grid, new_fishes, shark);
 		
-		for(int i = 1; i <= 3; i++) {
+		for(int i = 1; i <= 3; i++) {  // 최대 3칸 이동 가능
 			int my = shark.y + directions[shark.d][0] * i;
 			int mx = shark.x + directions[shark.d][1] * i;
 			
-			if(0 <= my && my < 4 && 0 <= mx && mx < 4 && new_grid[my][mx] != 0) {
+			if(0 <= my && my < 4 && 0 <= mx && mx < 4 && new_grid[my][mx] != 0) {  // 이동 가능 범위라면
 				int fish = new_grid[my][mx];
 				int md = new_fishes[fish].d;
 				new_grid[my][mx] = 0;
 				new_fishes[fish].dead = true;
-				move_shark(my, mx, new Pos(my, mx, md), score + fish, new_grid, new_fishes);
+				move_shark(my, mx, new Pos(my, mx, md), score + fish, new_grid, new_fishes);  //  이동 가능한 칸 다 이동시켜 봄
 				new_grid[my][mx] = fish;
 				new_fishes[fish].dead = false;
 			}			
@@ -123,7 +113,7 @@ public class BOJ_19236_청소년상어 {
 	}
 
 	static void solve() {
-		Pos shark = new Pos(-1, -1, -1);
+		Pos shark = new Pos(-1, -1, -1);  // 초기 상어 초기화
 		int fish = grid[0][0];
 		shark.y = 0;
 		shark.x = 0;

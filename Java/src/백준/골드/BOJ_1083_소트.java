@@ -35,14 +35,14 @@ public class BOJ_1083_소트 {
 			
 			int maxNum = 0;
 			int maxIdx = 0;
-			for(int j = i; j < i + s + 1; j++) {
-				if(maxNum < arr[j]) {
+			for(int j = i; j < Math.min(i + s + 1, n); j++) {
+				if(maxNum < arr[j]) {  // 가장 큰 값 탐색
 					maxNum = arr[j];
 					maxIdx = j;
 				}
 			}
 			
-			while(maxIdx != i && s > 0) {  // 최대값이 자기 자신이 아닐 때
+			while(maxIdx != i && s > 0) {  // 최대값이 자기 자신이 아닐 때, 해당 값을 안 쪽으로 끌어옴
 				int temp = arr[maxIdx - 1];
 				arr[maxIdx - 1] = arr[maxIdx];
 				arr[maxIdx] = temp;

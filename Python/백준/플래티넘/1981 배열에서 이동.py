@@ -34,7 +34,6 @@ class Main:
     def solve(self):
         min_num, max_num = min(map(min, self.grid)), max(map(max, self.grid))
         left, right = 0, max_num - min_num
-        self.answer = right  # 가능한 최소 차이를 저장
 
         while left <= right:
             mid = (left + right) // 2
